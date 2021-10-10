@@ -6,6 +6,7 @@
   font-weight: normal;
   src: url(./fonts/taken-by-vultures/Taken\ by\ Vultures\ Demo.otf);
 }
+
 *,
 *::before,
 *::after {
@@ -32,7 +33,6 @@ body {
 
 .section {
   display: flex;
-
   background: url(./images/Certificate\ Background.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,7 +44,6 @@ body {
 .divider {
   display: flex;
   flex: 0.03;
-
   background-color: #00aeff;
 }
 
@@ -177,27 +176,25 @@ body {
     display: flex;
     flex-direction: column;
   }
-
 }
 
-@media only screen and (max-width: 671px){
-     .certificate--info{
-      padding: 2rem;
+@media only screen and (max-width: 671px) {
+  .certificate--info {
+    padding: 2rem;
   }
-.certification--section{
-   justify-content: center;
- margin-top: 0;
-}
+  .certification--section {
+    justify-content: center;
+    margin-top: 0;
+  }
 }
 
-@media only screen and (max-width: 375px){
-    .holder--name{
-        font-size: 4rem;
-    }
+@media only screen and (max-width: 375px) {
+  .holder--name {
+    font-size: 4rem;
+  }
 }
 @media only screen and (max-width: 550px) {
   html {
     font-size: 50%;
   }
- 
 }
