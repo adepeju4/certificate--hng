@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Taken By Vultures";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./fonts/taken-by-vultures/Taken\ by\ Vultures\ Demo.otf);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+}
+
+.section {
+  display: flex;
+
+  background: url(./images/Certificate\ Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 75vw;
+  height: 80vh;
+}
+
+.divider {
+  display: flex;
+  flex: 0.03;
+
+  background-color: #00aeff;
+}
+
+.certificate--info {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 0.97;
+}
+
+.organization--section {
+  display: flex;
+
+  justify-content: space-between;
+  width: 100%;
+}
+.organization--icons img {
+  object-fit: contain;
+  width: clamp(4rem, 9rem, 10rem);
+  height: 3rem;
+  margin-right: 2rem;
+}
+
+.organization--icons .i4g {
+  width: clamp(9rem, 13rem, 15rem);
+}
+
+.verify--certificate {
+  display: flex;
+  align-items: flex-end;
+}
+
+.verify--certificate p {
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+  opacity: 0.5;
+}
+
+.verify--certificate a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+.certification--section {
+  height: 55rem;
+  display: flex;
+  margin-top: 6rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.certification--section p:first-child {
+  margin-bottom: 4rem;
+}
+
+.certification--section p:not(:first-child) {
+  margin-bottom: 1rem;
+}
+
+.certification--section .heading {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.holder--name {
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+.certificate--description {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.bolden {
+  font-weight: 600;
+}
+
+.stages--completed {
+  font-size: 1.2rem;
+  color: #00aeff;
+  font-weight: 500;
+}
+
+.signature--section {
+  position: absolute;
+  bottom: 0;
+}
+
+.signature--section p:first-child {
+  margin: 0;
+}
+.signature--section p {
+  margin: 0;
+}
+
+.signature--section .signature {
+  font-family: "Taken By Vultures", sans-serif;
+  font-size: 4rem;
+  color: #9d9d9d;
+  letter-spacing: 0.3rem;
+}
+
+.signature--holder {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.holder--designation {
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 998px) {
+  .organization--icons img {
+    width: 6rem;
+    margin-right: 1rem;
+  }
+
+  .organization--icons .i4g {
+    width: 7rem;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .organization--section {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media only screen and (max-width: 671px){
+     .certificate--info{
+      padding: 2rem;
+  }
+.certification--section{
+   justify-content: center;
+ margin-top: 0;
+}
+}
+
+@media only screen and (max-width: 375px){
+    .holder--name{
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+ 
+}
