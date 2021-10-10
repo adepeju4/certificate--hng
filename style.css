@@ -114,6 +114,7 @@ body {
 .holder--name {
   font-weight: 500;
   font-size: 5rem;
+  text-transform: capitalize;
 }
 
 .certificate--description {
