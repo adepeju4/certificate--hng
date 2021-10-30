@@ -100,10 +100,8 @@ body::-webkit-scrollbar {
 .certification--section {
   height: 55rem;
   display: flex;
-
   flex-direction: column;
   justify-content: center;
-  position: relative;
 }
 
 .certification--section p:first-child {
